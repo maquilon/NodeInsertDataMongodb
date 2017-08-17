@@ -1,0 +1,24 @@
+{
+  "name": "nodeinsertdatamongdb",
+  "version": "1.0.0",
+  "description": "Insert a document into a Mongodb collection using Node.JS",
+  "main": "app.js",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "mongodb": "^2.2.31"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maquilon/NodeInsertDataMongodb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maquilon/NodeInsertDataMongodb/issues"
+  },
+  "homepage": "https://github.com/maquilon/NodeInsertDataMongodb#readme"
+}
