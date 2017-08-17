@@ -9,10 +9,10 @@ MongoClient.connect(url, function (err, db) {
     assert.equal(null, err);
     console.log("Connected correctly to server.");
 
-    data.insertCompany(db, function () {  });
-    data.insertWorcenter(db, function () { }); 
-    data.insertRates(db, function () { });   
-    data.insertUser(db, function () { db.close(); });    
-
-    //data.insertWorcenter(db, function () { db.close(); });
+    data.insertCompany(db, function () {});
+    data.insertWorcenter(db, function () {}); 
+    data.insertRates(db, function () {});   
+    data.insertUser(db, function () {});    
+    data.insertGSARates(db, function () {});    
+    data.insertUserTime(db, function () { db.close(); });            
 });
