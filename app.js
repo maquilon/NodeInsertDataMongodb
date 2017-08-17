@@ -1,12 +1,18 @@
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var url = 'mongodb://localhost:27017/BurnDownTracker';
+var ObjectId = require('mongodb').ObjectID;
 
 var data = require('./data.js');
 
 MongoClient.connect(url, function (err, db) {
     assert.equal(null, err);
-    data.insertCompany(db, function () {
-        db.close();
-    });
+    console.log("Connected correctly to server.");
+
+    data.insertCompany(db, function () {  });
+    data.insertWorcenter(db, function () { }); 
+    data.insertRates(db, function () { });   
+    data.insertUser(db, function () { db.close(); });    
+
+    //data.insertWorcenter(db, function () { db.close(); });
 });
